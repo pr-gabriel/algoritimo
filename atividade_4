@@ -10,11 +10,11 @@ int main() {
     delta = b * b - 4 * a * c;
     
     if (delta > 0) {
-        printf("A equaÃ§Ã£o tem 2 raÃ­zes reais\n");
+        printf("A equacao tem 2 rai­zes reais\n");
     } else if (delta == 0) {
-        printf("A equaÃ§Ã£o tem 1 raiz real\n");
+        printf("A equacao tem 1 raiz real\n");
     } else {
-        printf("A equaÃ§Ã£o nÃ£o tem raÃ­zes reais\n");
+        printf("A equacao nao tem raizes reais\n");
     }
-    printf("Obs.:Coeficiente c deve ser negativo para obter 2 raÃ­zes");
+    printf("Obs.:Coeficiente c deve ser negativo para obter 2 raizes");
 }
