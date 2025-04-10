@@ -1,0 +1,57 @@
+/*: Extremamente Básico
+
+Leia 2 variáveis, nomeadas A e B e faça a soma dessas duas variáveis, atribuindo seu resultado à variável X. . Imprimir X como mostrado abaixo. Imprima a linha final após o resultado, caso contrário você obterá “Erro de Apresentação”.
+
+Entrada
+O arquivo de entrada conterá 2 números inteiros.
+
+Saída
+Imprima a carta X (maiúscula) com espaço em branco antes e depois do sinal igual seguido do valor de X, conforme exemplo a seguir.
+
+Obs.: afinal, não se esqueça da linha final.*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    int num1, num2, x;
+    
+    printf("Digite 2 numeros para a soma: \n");
+    scanf("%d", &num1);
+    scanf("%d", &num2);
+    
+    x = num1 + num2;
+    
+    printf("\nX = %d", x);
+    
+    printf("\n\nFinal \n _____________________");
+    
+    return 0;
+}
+
+/*Área de um Círculo
+
+A fórmula para calcular a área de uma circunferência é definida como A = π. R2. . Considerando a este problema que π = 3.14159:
+
+Calcule a área usando a fórmula fornecida na descrição do problema.
+
+Entrada
+A entrada contém um valor de ponto flutuante (dupla precisão), que é a variável R.
+
+Saída
+Apresentar a mensagem "A=" seguida do valor da variável, como no exemplo abaixo, com quatro casas após a vírgula. Use todas as variáveis de precisão dupla. 
+Como todos os problemas, não se esqueça de imprimir o final da linha após o resultado, caso contrário você receberá "Erro de apresentação".*/
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main(){
+    float R, A=0, n=3.14159;
+    
+    printf("Digite o raio do Círculo: \n");
+    scanf("%f", &R);
+    
+    A = n*(R*R);
+    
+    printf("A = %.4f", A);
+}
