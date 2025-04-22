@@ -1,0 +1,18 @@
+/*
+8. Crie uma função capaz de calcular a hipotenusa de um triângulo retângulo. A formula é
+a que se segue: hipotenusa = ඥcatetoOpostoଶ + catetoAdjacenteଶ.
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+#include<math.h>
+
+int main(){
+    float oposto, adjacente, h;
+    printf("Digite o cateto oposto: \n");
+    scanf("%f", &oposto);
+    printf("Digite o cateto adjacente: \n");
+    scanf("%f", &adjacente);
+    h= sqrt(pow(oposto, 2) + pow(adjacente, 2));
+    printf("Hipotenusa = %.2f", h);
+}

@@ -1,0 +1,21 @@
+/*
+4. Supondo um empréstimo no valor de c Reais, por m meses a juros de t% ao mês, crie uma
+programa capaz de ler os valores de c, m e t e descobrir os juros cobrados nesse
+empréstimo. A fórmula para cálculo dos juros simples é a que se segue: j = c ∗ m ∗ t.
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+    int m;
+    float c, t, j=0.0;
+    printf("Digite o valor do empréstimo, em reais(Ex.:1833.68): \n");
+    scanf("%f", &c);
+    printf("Agora a quantidade de meses do empréstimo (Ex.:24): \n");
+    scanf("%d", &m);
+    printf("Por fim, a taxa de juros(em porcentagem. Ex.:12.8): \n");
+    scanf("%f", &t);
+    j= c* (t/100.0) * m;
+    printf("Os juros aplicados ao empréstimo eh: %.2f", j);
+}

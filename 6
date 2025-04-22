@@ -1,0 +1,16 @@
+/*6. Crie um programa capaz de ler 2 números, que indicam respectivamente peso e altura, e
+imprimir seu IMC. A fórmula do IMC é peso/altura*altura.
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+    float peso, altura, imc=0.0;
+    printf("Digite o seu peso(em Kilos): \n");
+    scanf("%f", &peso);
+    printf("Agora a sua altura(em metros): \n");
+    scanf("%f", &altura);
+    imc= peso/(altura*altura);
+    printf("Seu IMC eh: %.2f", imc);
+}

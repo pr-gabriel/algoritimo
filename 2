@@ -1,0 +1,15 @@
+/*2. Crie um programa capaz de ler um número que representa o número de bytes de um
+arquivo, e converter para KB. Obs: Um KB possui 1024 bytes.
+*/
+
+#include<stdio.h>
+#include<stdlib.h>
+
+int main(){
+    int bytes;
+    float KB;
+    printf("Digite o tamanho do arquivo em bytes: \n");
+    scanf("%d", &bytes);
+    KB=bytes/1024.0;
+    printf("O tamanho do arquivo em KB eh: %.4fKB", KB);
+}
